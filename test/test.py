@@ -6,7 +6,7 @@ class TestApp(unittest.TestCase):
         tester = app.test_client()
         response = tester.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, b"<h1>Hello from flask & jenkins</h1>")
+        self.assertEqual(response.data, b"<h1>Hello only</h1>")
 
 
 if __name__ == "__main__":
